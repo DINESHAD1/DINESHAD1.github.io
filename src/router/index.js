@@ -1,5 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import CountDown from '@/components/CountDown'
+import TodoApp from '@/views/TodoApp'
+import CalculatorApp from '@/views/CalculatorApp'
+import WeatherApp from '@/views/WeatherApp'
+import EmployeeDetails from '@/views/EmployeeDetails'
+import EmployeeD from '@/components/EmployeeD'
+import AddEmployee from '@/components/AddEmployee'
 
 const routes = [
   {
@@ -7,6 +14,45 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+  {
+    path:'/addemployee',
+    name:'addemployee',
+    component:AddEmployee
+  },
+  {
+    path:'/employeedetails1',
+    name:'employeedetails1',
+    component:EmployeeD
+  },
+  {
+    path:'/countdown',
+    name:'countdown',
+    component: CountDown
+  },
+  {
+    path:'/todoapp',
+    name:'todoapp',
+    component:TodoApp
+    
+  },
+  {
+    path:'/calculator',
+    name:'calculator',
+    component: CalculatorApp
+  },
+  {
+    path:'/employeedetails',
+    name:'employeedetails',
+    component:EmployeeDetails
+
+  },
+  
+  {
+    path:'/weatherapp',
+    name:'weatherapp',
+    component:WeatherApp
+  }
+  ,
   {
     path: '/about',
     name: 'about',

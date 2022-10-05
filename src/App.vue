@@ -1,7 +1,12 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> | <br>
+    <router-link to="/countdown">Count down</router-link> | 
+    <router-link to="/todoapp">Todo</router-link> | 
+    <router-link to="/calculator">Calculator</router-link> | 
+    <router-link to="/weatherapp">WeatherApp</router-link> |
+    <router-link to="/employeedetails">Employee Details</router-link>
   </nav>
   <router-view/>
 </template>
@@ -16,7 +21,7 @@
 }
 
 nav {
-  padding: 30px;
+  padding: 10px;
 }
 
 nav a {
